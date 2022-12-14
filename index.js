@@ -1,10 +1,18 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
 
-/* 
-  Add your pseudocode here
-*/
+  // convert the word into an array using .split
+  // reverse the array then save it into variable
+  // convert the array into a string again using .join
+
+  let splittedWord = word.split("");
+  splittedWord = splittedWord.reverse();
+  let newWord = splittedWord.join("");
+
+  if (newWord.toLowerCase() === word.toLowerCase()) return true;
+
+  return false;
+}
 
 /*
   Add written explanation of your solution here
